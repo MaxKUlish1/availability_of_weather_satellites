@@ -3,16 +3,17 @@ from timezonefinder import TimezoneFinder
 from skyfield.api import Topos, load as sky_load
 from pytz import timezone
 
+# Set location and angle
+longitude = 76.8972
+latitude = 43.2189
+angle=55
+
+
 # Load data
 data = sky_load('de421.bsp')  # Load JPL ephemeris DE421
 load = sky_load  # Create a Loader object
 ts = load.timescale()  # Call timescale() on the Loader object
 tf = TimezoneFinder()
-
-# Set location
-longitude = 76.8972
-latitude = 43.2189
-angle=55
 
 # Get timezone for location
 tz_name = tf.timezone_at(lng=longitude, lat=latitude)
@@ -46,6 +47,7 @@ print("""
       
     Фоны позволяют определить временное окно в которое спутник будет доступен для приема.
       """)
+print(f"Указанный угол: {angle}°")
 
 # Find satellite passes
 passes = []
