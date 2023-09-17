@@ -2,12 +2,14 @@ from datetime import datetime, timedelta
 from timezonefinder import TimezoneFinder
 from skyfield.api import Topos, load as sky_load
 from pytz import timezone
+import json
 
-# Set location and angle
-longitude = 76.8972
-latitude = 43.2189
-angle=55
+with open('data.json') as f:
+    data = json.load(f)
 
+longitude = data['longitude']
+latitude = data['latitude']
+angle = data['angle']
 
 # Load data
 data = sky_load('de421.bsp')  # Load JPL ephemeris DE421
