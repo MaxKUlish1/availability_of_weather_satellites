@@ -10,9 +10,13 @@ availability_of_weather_satellites[BETA] Программа для опреде�
 
 Пример интерфейса 1
 
+![Image](https://github.com/MaxKUlish1/availability_of_weather_satellites/raw/main/1_interf.png)
 Пример интерфейса 2
 
+![Image](https://github.com/MaxKUlish1/availability_of_weather_satellites/raw/main/2_interf.png)
 Пример интерфейса 3
+
+![Image](https://github.com/MaxKUlish1/availability_of_weather_satellites/raw/main/3_interf.png)
 
 ВНИМАНИЕ! ЭТА ВЕРСИЯ НЕ ПРОХОДИЛА ТЕСТИРОВАНИЕ. ЕСЛИ ВЫ НАЙДЕТЕ ОШИБКИ, ПОЖАЛУЙСТА, СВЯЖИТЕСЬ СО МНОЙ В ТЕЛЕГРАМ @MX_WORLD
 
