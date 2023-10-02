@@ -1,5 +1,13 @@
-datetime
-pytz
-skyfield
-timezonefinder
+os
+time
+requests
 json
+bs4
+datetime
+skyfield
+pytz
+rich
+IPython
+timezonefinder
+prettytable
+babel
