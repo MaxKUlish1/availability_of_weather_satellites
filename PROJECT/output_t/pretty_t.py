@@ -1,5 +1,4 @@
-from prettytable import PrettyTable
-from datetime import datetime
+
 import helpers.output_helpers as help_me
 from helpers.all_helpers import *
 

@@ -1,6 +1,3 @@
-from helpers.all_helpers import *
-ts = load.timescale()  # Вызвать timescale() на объекте Loader
-
 # Установить временной диапазон
 from helpers.all_helpers import *
 ts = load.timescale()  # Вызвать timescale() на объекте Loader

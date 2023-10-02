@@ -12,7 +12,7 @@ def load_sat_data():
             filename = url.split('/')[-1]
             if os.path.exists(os.path.join('..', 'files', 'txt_files', filename)):
                 file_time = os.path.getmtime(filename)
-                if time.time() - file_time > 15 * 24 * 60 * 60:
+                if time.time() - file_time > days_for_update * 24 * 60 * 60:
                     print(f"Файл {filename} устарел. Хотите ли вы его обновить? (y/n)")
                     answer = input()
                     if answer.lower() == 'y':

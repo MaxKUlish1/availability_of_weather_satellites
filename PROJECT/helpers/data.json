@@ -1,6 +1,6 @@
 {
-    "longitude": 43.2220 ,
-    "latitude": 76.8512 ,
+    "longitude": 76.8512 ,
+    "latitude": 43.2220 ,
     "angle": 60,
     "azimuth_range": [0, 360],
     "satellite_names": [],

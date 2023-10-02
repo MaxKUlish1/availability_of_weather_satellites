@@ -1,8 +1,5 @@
 from helpers.all_helpers import *
 
-from rich.console import Console
-from rich.table import Table
-
 def output_with_rich(passes, start_date, end_date):
     # Создать объект Console
     console = Console()

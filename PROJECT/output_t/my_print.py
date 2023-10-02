@@ -3,9 +3,8 @@ from helpers.all_helpers import *
 
 def output_with_your_print(passes, start_date, end_date):
     
-    now = datetime.now(tz)
+    noww = datetime.now(tz)
     
-        
     def print_passess(day_str, date):
         print(f'\nСпутники, видимые {date.strftime("%Y-%m-%d")} ({day_str}) при минимальном угле {angle}°:')
         next_today_seen = False
@@ -13,10 +12,10 @@ def output_with_your_print(passes, start_date, end_date):
             local_rise_time = rise_time.astimezone(tz)
             local_set_time = set_time.astimezone(tz)
             if local_rise_time.date() == date:
-                if local_rise_time <= now <= local_set_time:
+                if local_rise_time <= noww <= local_set_time:
                     color_code = '\033[92m'  # Зеленый для спутников, которые видны в данный момент
-                elif local_rise_time > now:
-                    if local_rise_time.date() == now.date():
+                elif local_rise_time > noww:
+                    if local_rise_time.date() == noww.date():
                         if not next_today_seen:
                             color_code = '\033[93m'  # Желтый для следующего видимого спутника сегодня
                             next_today_seen = True
@@ -41,8 +40,7 @@ def output_with_your_print(passes, start_date, end_date):
                 print(f'{color_code}{sat_name} {local_rise_time.strftime("%H:%M:%S")} - {local_set_time.strftime("%H:%M:%S")}\033[0m ({bg_color_code}окно: {visibility_window_str}, максимальный угол: {max_elevation}°\033[0m) [type_select:{",".join(sat_types)}]')  # Сбросить цвет
 
     # Вывести пролеты за каждый день в заданном промежутке дат
-    from babel.dates import format_date
-
+    
 
     
     datee = start_date
