@@ -14,6 +14,10 @@ availability_of_weather_satellites[BETA] 🛰️
 
 Программа имеет три варианта интерфейса: старый (0), рекомендуемый (1) и улучшенный (2).
 
+
+![Image](https://github.com/MaxKUlish1/availability_of_weather_satellites/raw/main/base.png)
+
+
 Пример интерфейса 1
 
 ![Image](https://github.com/MaxKUlish1/availability_of_weather_satellites/raw/main/1_interf.png)
